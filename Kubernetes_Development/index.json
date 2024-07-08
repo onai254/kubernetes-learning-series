@@ -1,0 +1,49 @@
+{
+    "title": "Configuration in Kubernetes",
+    "description": "This scenario is designed to provide an introduction to fundamental Kubernetes Administration tasks.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "foreground": "foreground.sh",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "title": "Environment Variables in Kubernetes:",
+          "text": "step1/text.md",
+          "verify": "step1/verify.sh"
+        },
+        
+        {
+          "title": "ConfigMaps",
+          "text": "step2/text.md",
+          "verify": "step2/verify.sh"
+        },
+
+        {
+          "title": "ConfigMaps as Volumes",
+          "text": "step3/text.md",
+          "verify": "step3/verify.sh"
+        },
+        {
+          "title": "Replica Set",
+          "text": "step4/text.md",
+          "verify": "step4/verify.sh"
+        },
+        {
+          "title": "Deployments",
+          "text": "step5/text.md",
+          "verify": "step5/verify.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    },
+    "interface": {
+      "layout": "ide"
+    }
+  }

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap-from-file
+data:
+  CONFIG_VAR1: value1
+  CONFIG_VAR2: value2

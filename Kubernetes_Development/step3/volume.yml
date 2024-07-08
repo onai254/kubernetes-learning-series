@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: onai
+  labels:
+    name: onai
+spec:
+  containers:
+  - name: onai
+    image: gcr.io/google-samples/node-hello:1.0
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+  volumes:
+  - name: config-volume
+    configMap:
+      name: configdir
+    
+
